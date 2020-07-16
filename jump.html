@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div></div>
+    <script>
+        var jump = document.querySelector('div');
+        var time = 5;
+        setInterval(tiaozhuan,1000);
+        function tiaozhuan(){
+            if(time==0){
+                location.href = './轮播图练习.html'
+            }else{
+                jump.innerHTML = '您的页面将在'+time+'秒后跳转';
+            time--;
+            }
+            
+        }
+        
+
+
+    </script>
+</body>
+</html>
